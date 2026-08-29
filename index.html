@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Para ti 💜</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,400;0,600;1,400&family=Great+Vibes&family=Quicksand:wght@400;600&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+<div id="fondo-corazones"></div>
+
+<!-- ESCENA 1: ROMPECABEZAS -->
+<div class="escenario" id="escena-puzzle">
+  <h1 class="titulo">Resuelve para descubrir tu sorpresa</h1>
+  <p class="subtitulo">Arrastra las piezas para armar la imagen. Cuando esté completa, se abrirá algo especial para ti.</p>
+  <div id="tablero"></div>
+  <p class="ayuda-min">Tip: arrastra una pieza sobre otra para intercambiarlas.</p>
+</div>
+
+<!-- ESCENA 2: CARTA -->
+<div class="escenario oculto" id="escena-carta">
+  <div class="pergamino">
+    <div class="carta-titulo">Para mi persona favorita</div>
+    <div class="carta-cuerpo">
+    <div class="carta-texto" id="texto-carta">Si el tiempo fuera un río,
+Siempre te lo voy a hacer saber... (Titulo)
+
+Ay amor, mirandote a los ojos sé que eres diferente 
+Y sé que eres con lo que yo sueño y quiero.
+Ay amor, lo que te digo es verdad
+Yo nunca hablo por hablar.
+
+Realmente eres con lo que yo sueño.
+Esa risa que me aloca, tu mirada encantadora, más tu forma de ser
+Me pone a pensar 24/7 sobre ti.
+
+Te pienso tanto, que a mis amigos yo les hablo de ti
+Y de tanto pensarte aunque no te tenga al lado, me haces sonerír
+Hasta en las mañanas cuando tengo frío, me acuerdo de ti
+Y cada vez más reafirmo, que solo te quiero a ti.
+
+Salir contigo, estar contigo, soñar contigo
+Son cosas que me mantienen vivo
+Eres tu la que me brinda paz
+Eres tu la que me brinda calor en este mundo tan frío
+
+Eres tu la que me tiene como un loco
+Como un pirata, tu eres mi gran tesoro
+Como un pastor, eres a quien más adoro
+Como un conquistador, tu eres mi oro
+
+Contigo no me va a pasar lo de Macondo
+Si no duermo contigo, puede que me llegue el insomnio
+Pero nunca te voy a dejar de querer
+Y lo mucho que te quiero 
+Siempre te lo voy a hacer saber...</div>
+    </div>
+    <p class="desliza-aviso">↓ desliza para seguir leyendo ↓</p>
+    <div class="carta-firma">— con todo mi cariño</div>
+
+    <div class="carta-acciones">
+      <button class="boton-carta boton-salir" id="btn-salir">💌 ¿Salimos?</button>
+      <a class="boton-carta boton-cancion" id="btn-cancion" href="https://open.spotify.com/track/TU_ID_DE_CANCION" target="_blank" rel="noopener">🎵 Nuestra canción</a>
+    </div>
+
+    <div class="sello"></div>
+  </div>
+</div>
+
+<!-- VENTANA EMERGENTE: ¿SALIMOS? -->
+<div class="modal-fondo oculto" id="modal-salir">
+  <div class="modal-tarjeta">
+    <p class="modal-pregunta">¿Quieres salir conmigo esta semana? 🥺💜</p>
+    <div class="modal-botones">
+      <button class="modal-si" id="btn-si">¡Sí, claro! 💕</button>
+      <button class="modal-no" id="btn-no">No</button>
+    </div>
+    <p class="modal-respuesta oculto" id="modal-respuesta">¡Yay! Ya te aviso los detalles 🎉</p>
+  </div>
+</div>
+
+<script src="src/main.js"></script>
+
+</body>
+</html>
