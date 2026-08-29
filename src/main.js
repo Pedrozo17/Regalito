@@ -1,5 +1,5 @@
 
-const IMAGEN_PUZZLE = "/img/Foto_rompecabezas.jpeg";
+const IMAGEN_PUZZLE = "../img/Foto_rompecabezas.jpeg";
 document.documentElement.style.setProperty('--imagen-puzzle', `url("${IMAGEN_PUZZLE}")`);
 
 /* =========================================================
